@@ -13,7 +13,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         tags = {"@RUNNABLE","~@wip"},
         features = ".",
+        strict = true,
         glue = "com.dumitruc.training.stepdefs",
-        format = {"pretty","json:target/report-cucumber/cucumber.json","html:report/report-cucumber"})
+        format = {"pretty","json:target/json-report/cucumber.json","html:report/report-cucumber"})
 public class CucumberDefaultRunnerTest {
 }

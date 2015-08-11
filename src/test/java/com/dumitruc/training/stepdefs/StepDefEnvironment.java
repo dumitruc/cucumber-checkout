@@ -32,7 +32,7 @@ public class StepDefEnvironment extends StepDefBase{
 
     @When("^I say hello to (\\S+)$")
     public void iSayHelloTo(String whom) throws Throwable {
-        LOGGER.info("Receiving step argument: "+whom);
+        LOGGER.info("Receiving step argument: " + whom);
     }
 
     @Then("^(\\S+) says hello back to (\\S+)$")
@@ -40,7 +40,5 @@ public class StepDefEnvironment extends StepDefBase{
         LOGGER.info(whom+" is saying hello to "+who);
         assertThat("These are same person",whom,is(not(who)));
     }
-
-
 
 }
