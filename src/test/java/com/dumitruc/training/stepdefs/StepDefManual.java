@@ -20,7 +20,7 @@ public class StepDefManual extends StepDefBase{
     private static final Logger LOGGER = LoggerFactory.getLogger(StepDefManual.class);
 
 
-    @And("^I manually (.*) on (.*) and it (?:|is still )(passes|fails|pending)$")
+    @Then("^I manually (.*) on (.*) and it (?:|is still )(passes|fails|pending)$")
     public void I_manually_do_something_on_some_date_and_it_passes(String action, String when, String status) throws Throwable {
         LOGGER.info(String.format("I have \"%s\" on \"%s\" and the status is: %s",action,when,status));
         if(status.equals("pending")){
