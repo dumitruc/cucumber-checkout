@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/dumitruc/cucumber-checkout.svg?branch=master)](https://travis-ci.org/dumitruc/cucumber-checkout)
+
 # cucumber-checkout
 A exercise project where to try various cucumber execution setup
 
