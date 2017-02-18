@@ -1,4 +1,4 @@
-@RUNNABLE
+@RUNNABLE @wip
 Feature: Checkout
   Scenario: Checkout a banana
     Given the price of a "banana" is 40c

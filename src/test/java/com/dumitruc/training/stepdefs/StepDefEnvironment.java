@@ -2,9 +2,11 @@ package com.dumitruc.training.stepdefs;
 
 import com.dumitruc.training.stepdefs.StepDefBase;
 import cucumber.api.PendingException;
+import cucumber.api.Scenario;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import cucumber.runtime.StepDefinition;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -32,7 +34,8 @@ public class StepDefEnvironment extends StepDefBase{
 
     @When("^I say hello to (\\S+)$")
     public void iSayHelloTo(String whom) throws Throwable {
-        LOGGER.info("Receiving step argument: " + whom);
+        throw new PendingException();
+//        LOGGER.info("Receiving step argument: " + whom);
     }
 
     @Then("^(\\S+) says hello back to (\\S+)$")
